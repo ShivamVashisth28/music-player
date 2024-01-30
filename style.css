@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-screen{
+    position: absolute;
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.startBtn{
+  
+    color: white;
+    font-size: 4rem;
+    font-family: sans-serif;
+    letter-spacing: 0.2rem;
+    
+}
+
+
+.startBtn p{
+    transition: all 0.7s;   
+}
+.startBtn p:hover{
+    color: purple;
+    transform: scale(1.1);
+}
+
+.second-screen{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(6, 7, 7, 0.726); */
+    /* background-color: rgb(16, 16, 16); */
+    background-image: url("cover1.webp");
+    background-size: cover;
+    
+
+}
+
+.sidebar-lane{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sidebar{
+    height: 100%;
+    width: 90px;
+    background-color: rgba(226, 119, 119, 0.235);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+    
+}   
+
+
+
+.color{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 2px 2px;
+    
+}
+
+.color:hover{
+    transform: scale(1.1);    
+}
+
+
+.red{
+    /* background-color: red; */
+    background-image: url("dhillon.jpg"); 
+    background-size: cover;
+
+    
+}
+
+.blue{
+    /* background-color: blue; */
+    background-image: url("dhillon.jpg"); 
+    background-size: cover;
+
+}
+.purple{
+    /* background-color: purple; */
+    background-image: url("drake.jpeg"); 
+    background-size: cover;
+
+}
+.orange{
+    /* background-color: orange; */
+    background-image: url("drake.jpeg"); 
+    background-size: cover;
+
+}
+.yellow{
+    /* background-color: yellow; */
+    background-image: url("lipa.jpg"); 
+    background-size: cover;
+
+}
+.green{
+    /* background-color: green; */
+    background-image: url("atif.jpeg"); 
+    background-size: cover;
+
+}
+
+
+.drop-down{
+    position: absolute;
+    top: 138px;
+    /* top: 129.5px; */
+    /* left: 90px; for left sidebar*/
+    /* right: 90px;; for right sidebar   */
+    opacity: 0; 
+    z-index: -2;
+    border-radius: 15px;
+    height: 500px;
+    width: 300px;
+    background-color: rgba(226, 119, 119, 0.235);
+
+}
+
+.left-drop-down{
+    left: 90px;
+}
+
+.right-drop-down{
+    right:90px;
+}
+
+.removeRightSideBorderRadius{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0 ;
+}
+
+.removeLeftSideBorderRadius{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+.left-songs iframe{
+    position: absolute;
+    height: 352px;
+    width: 275px;
+    margin-top: 70px;
+    margin-left:10px ;
+    opacity: 0;
+    z-index: -5;
+}
+
+.right-songs iframe{
+    position: absolute;
+    height: 352px;
+    width: 275px;
+    margin-top: 70px;
+    margin-left:15px ;
+    opacity: 0;
+    z-index: -5;
+
+}
+
+.middle{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    /* border: solid 2px red; */
+    /* background-image: url("cover.webp"); */
+
+}
+
+.main-content{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(0, 0, 0); */
+    
+    
+}
+
+.main-content p{
+    color: rgb(226, 216, 231);
+    font-family: sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bolder;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: purple;
+    animation: chotaBada 1.2s  infinite ;
+}
+
+@keyframes chotaBada {
+    from{
+        transform: scale(0.9);
+        color: rgb(226, 216, 231);
+    }
+    to{
+        transform: scale(1.1);
+        color: rgb(175, 74, 225);
+    }
+}
+
+
+
+.text-side{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-div{
+    width: 3%;
+    /* border: 2px rgb(216, 119, 119) solid;     */
+    /* background-color: red; */
+}
+.text-div img{
+    height: 40px;
+    margin:0;
+}
+
+
+
+
+
+
+
+
+
